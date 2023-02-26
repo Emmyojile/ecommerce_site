@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="css/log.css" />
+    <title>Simple Reistration Form</title>
+  </head>
+  <body>
+    <form action="/login" method="post">
+      <div class="container">
+        <h1>Log In</h1>
+        <h2  style="color:red">{{msg}}</h2>
+        <p>Fill in to access your account.</p>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        /><i class="bi-eye-slash" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+
+        <p>
+          Don't have an account ?
+          <a href="/register" style="color: dodgerblue">SignUp Here</a>.
+        </p>
+
+        <div class="clearfix">
+          <button type="submit" class="btn">Log In</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="youtubeBtn">
+      <a target="_blank" href="https://www.youtube.com/watch?v=7k8kKRQa9jY">
+        <span>Watch on YouTube</span>
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </body>
+</html>

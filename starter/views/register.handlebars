@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reg.css" />
+    <title>Simple Reistration Form</title>
+  </head>
+  <body>
+    <form action="/register" method="post">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <h2  style="color:red">{{msg}}</h2>
+        <p>Please fill in this form to create an account.</p>
+
+        <label for="email"><b>Username</b></label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter Username"
+          required
+        />
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+
+        <label for="email"><b>Confirm Password</b></label>
+        <input type="password" name="confirmPassword" placeholder="Retype Password" required />
+
+        <!-- <label for="email"><b>Phone Number</b></label>
+        <br />
+        <select name="phoneCode" required>
+          <option selected hidden value="">Code</option>
+          <option value="66">+98</option>
+          <option value="66">+99</option>
+          <option value="66">+90</option>
+          <option value="66">+66</option>
+        </select>
+        <input type="phone" name="phone" placeholder="812345678" required /> -->
+
+        <p>
+          Already have an account ?
+          <a href="/login" style="color: dodgerblue">Login Here</a>.
+        </p>
+
+        <div class="clearfix">
+          <button type="submit" class="btn" value="Submit">Sign Up</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="youtubeBtn">
+      <a target="_blank" href="https://www.youtube.com/watch?v=7k8kKRQa9jY">
+        <span>Watch on YouTube</span>
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </body>
+</html>
